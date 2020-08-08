@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+    	<add id="MagePrakash_OutofStockNotification::notification" title="OutofStock Notification" translate="title" module="MagePrakash_OutofStockNotification" sortOrder="900" parent="Magento_Catalog::catalog" dependsOnModule="MagePrakash_OutofStockNotification" resource="MagePrakash_OutofStockNotification::notification"/>
+	    <add id="MagePrakash_OutofStockNotification::notificationlist" title="OutofStock Subscription List" module="MagePrakash_OutofStockNotification" sortOrder="1000" parent="MagePrakash_OutofStockNotification::notification" action="outofstocknotification/customerlist" resource="MagePrakash_OutofStockNotification::notificationlist"/>
+	</menu>
+</config>
+
